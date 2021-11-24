@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e6e6e6;
+}
+
+.game-container {
+  display: flex;
+  width: 80%;
+  margin:100px auto;
+}
+
+.board-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 0fr);
+  flex: 1;
+}
+
+#pieces-container {
+  flex:initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  background-color: inherit;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+
+.col-1 {
+  border-right: 15px solid #272c34;
+  grid-column: 1;
+}
+
+.col-2 {
+  border-right: 15px solid #272c34;
+  grid-column: 2;
+}
+
+.col-3 {
+  grid-column: 3;
+}
+
+.row-1 {
+  border-bottom: 15px solid #272c34;
+  grid-row: 1;
+}
+
+.row-2 {
+  border-bottom: 15px solid #272c34;
+  grid-row: 2;
+}
+
+.row-3 {
+  grid-row: 3;
+}
+
+.piece-box {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.piece {
+  height: 100px;
+  width: 100px;
+  margin: 30px 0px;
+}
+
+.winner {
+  font-size: 4em;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-family: 'Urbanist', monospace;
+  font-weight: 800;
+  color: #272c34;
+}

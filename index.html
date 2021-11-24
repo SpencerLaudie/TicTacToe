@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Tic Tac Toe</title>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;200;300;400;500;600;700;800;900&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet'>
+    <script src='/js/scripts.js' charset='utf-8'></script>
+    <script src='/js/scripts.js' charset='utf-8'></script>
+  </head>
+  <body>
+    <div class='game-container'>
+      <div class='board-container'>
+        <div class='square col-1 row-1' id='1' onmouseover="setDropSite('1')" onmouseout="revertDropSite()" onmouseup="mouseUp();"></div>
+        <div class='square col-2 row-1' id='2' onmouseover="setDropSite('2')" onmouseout="revertDropSite()" onmouseup="mouseUp();"></div>
+        <div class='square col-3 row-1' id='3' onmouseover="setDropSite('3')" onmouseout="revertDropSite()" onmouseup="mouseUp();"></div>
+        <div class='square col-1 row-2' id='4' onmouseover="setDropSite('4')" onmouseout="revertDropSite()" onmouseup="mouseUp();"></div>
+        <div class='square col-2 row-2' id='5' onmouseover="setDropSite('5')" onmouseout="revertDropSite()" onmouseup="mouseUp();"></div>
+        <div class='square col-3 row-2' id='6' onmouseover="setDropSite('6')" onmouseout="revertDropSite()" onmouseup="mouseUp();"></div>
+        <div class='square col-1 row-3' id='7' onmouseover="setDropSite('7')" onmouseout="revertDropSite()" onmouseup="mouseUp();"></div>
+        <div class='square col-2 row-3' id='8' onmouseover="setDropSite('8')" onmouseout="revertDropSite()" onmouseup="mouseUp();"></div>
+        <div class='square col-3 row-3' id='9' onmouseover="setDropSite('9')" onmouseout="revertDropSite()" onmouseup="mouseUp();"></div>
+      </div>
+      <div id='pieces-container'>
+        <div class='piece-box' id='exes'>
+          <img src='/images/ex.svg' alt='ex' id='ex' class='piece ex' onmousedown="mouseDown('ex');" onmouseup="mouseUp();" ondragstart="return false;">
+        </div>
+        <div class='piece-box' id='ohs'>
+          <img src='/images/oh.svg' alt='oh' id='oh' class='piece oh' onmousedown="mouseDown('oh');" onmouseup="mouseUp();" ondragstart="return false;">
+        </div>
+      </div>
+    </div>
+    <div class="winner">
+      <p id="message">X's turn</p>
+    </div>
+  </body>
+</html>
